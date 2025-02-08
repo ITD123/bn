@@ -27,6 +27,9 @@ app.use(express.json())
 app.listen(process.env.PORT as string,()=>{
     connectdb()
     console.log(`appp is listening to ${process.env.PORT}`)  
+})
+app.get('/',(req:Request,res:Response)=>{
+    res.send('api is workin')
 }) 
 // configure router 
 router.post('/',async(req:Request,res:Response)=>{
