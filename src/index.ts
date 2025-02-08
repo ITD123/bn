@@ -26,7 +26,7 @@ app.use(express.json())
 //configure port were server will run and it callback
 app.listen(process.env.PORT as string,()=>{
     connectdb()
-    console.log(`appp is listening to port ${process.env.PORT}`)  
+    console.log(`appp is listening to ${process.env.PORT}`)  
 }) 
 // configure router 
 router.post('/',async(req:Request,res:Response)=>{
